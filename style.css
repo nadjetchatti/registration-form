@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7a3f56;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #e8c9d0;
+    width: 100%;
+    max-width: 440px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px black;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 6px 0 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+
+}
+
+.input-box {
+    display: flex;
+    align-self: center;
+    border: 1.5px solid rgb(26, 21, 21);
+    border-radius: 9px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 8px;
+    font-size: 15px;
+    background: transparent;
+    min-width: 0;
+}
+
+.icon {
+    margin-top: 7px;
+    color: grey;
+}
+
+.eye {
+    color: rgb(129, 121, 121);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.terms label {
+    margin-top: 0;
+    font-weight: normal;
+
+}
+
+#terms {
+    margin-bottom: 10px;
+
+
+}
+
+.register-btn {
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    background-color: #4b0f1f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #b78793;
+}
+
+/*with js */
+.input-box.invalid {
+    border-color: red;
+    background: #ffe9e9;
+
+}
+
+.input-box.valid {
+    border-color: rgb(25, 212, 25);
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+
+/*success popup*/
+.overlay {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    background: white;
+    justify-content: center;
+    box-shadow: 0 0 25px #22c55e;
+    align-items: center;
+    padding: 20px;
+    border-radius: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.overlay.show {
+    display: flex;
+}
+
+
+
+.check {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 12px;
+    background: #22c55e;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 9px;
+    border-radius: 50%;
+
+}
+
+.pop-upbox p {
+    color: #455067;
+    font-size: 18px;
+    margin-top: 6px;
+
+
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae0547b3db.js"></script>
+
+
+</head>
+
+<body>
+    <div class="card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Fill in the form below to get started</p>
+
+        <form id="form">
+
+            <label for="fullname">Full name</label>
+            <div class="input-box" id="box-fullname">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" id="fullname" placeholder="Enter your full name">
+            </div>
+            <p class="error" id="error-fullname"></p>
+
+            <label for="email">Email Address</label>
+            <div class="input-box" id="box-email">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="text" id="email" placeholder="you@example.com">
+            </div>
+            <p class="error" id="error-email"></p>
+
+
+            <label for="password">Password</label>
+            <div class="input-box" id="box-password">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" id="password" placeholder="craete a password">
+                <button type="button" class="eye" id="eye-password"><i class="fa-solid fa-eye"></i></button>
+            </div>
+            <p class="error" id="error-password"></p>
+
+            <label for="confirmpassword">Confirm Password</label>
+            <div class="input-box" id="box-confirmpassword">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" id="confirmpassword" placeholder="Repeat your password">
+                <button type="button" class="eye" id="eye-confirmpassword"><i class="fa-solid fa-eye"></i></button>
+            </div>
+            <p class="error" id="error-confirmpassword"></p>
+
+            <label for="phone">phone number</label>
+            <div class="input-box" id="box-phone">
+                <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                <input type="text" id="phone" placeholder="+213 555 333 222">
+            </div>
+            <p class="error" id="error-phone"></p>
+
+            <div class="terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">i agree to the terms and conditions</label>
+            </div>
+            <p class="error" id="error-terms"></p>
+
+            <button type="submit" class="register-btn">Register</button>
+
+        </form>
+    </div>
+
+    <div class="overlay" id="popup">
+        <div class="pop-upbox">
+            <div class="check"><i class="fa-solid fa-check"></i></div>
+            <h2>Registration Successful</h2>
+            <p>your a ccount has been created seccessfully</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
